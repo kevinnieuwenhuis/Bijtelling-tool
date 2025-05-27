@@ -49,7 +49,7 @@ if kenteken:
         netto_maand = (bijtelling / 12) * 0.37  # 37% IB tarief gesimplificeerd
 
         if auto_type == "btw":
-            btw_perc = 0.015 if leeftijd > 5 else 0.027
+            btw_perc = 0.015 if leeftijd < 5 else 0.027
             btw_correctie = catalogusprijs * btw_perc
         else:
             btw_correctie = 0
